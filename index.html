@@ -4,13 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
-    <h1>Kelompok Membuat Blog</h1>
-    <p>Anggota 1 : Mochammad Fadhail Fijratullah</p>
-    <p>Anggota 2 : Reyhan Dwiyan Nugraha</p>
+    <header class="header">
+        <nav class="nav">
+            <h1>Blog</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="about/index.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <article class="featured-article">
+            <img src="https://picsum.photos/1200/600" alt="Featured article">
+            <div class="article-content">
+                <h2>Featured Article Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <a href="article/articleOne.html">Read More</a>
+            </div>
+        </article>
+
+        <div class="article-grid">
+            <!-- Article Cards -->
+            <article class="article-card">
+                <img src="https://picsum.photos/400/300" alt="Article image">
+                <div class="article-content">
+                    <h3>Article Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://picsum.photos/401/300" alt="Article image">
+                <div class="article-content">
+                    <h3>Article Title 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://picsum.photos/402/300" alt="Article image">
+                <div class="article-content">
+                    <h3>Article Title 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h4>Recent Posts</h4>
+                <ul>
+                    <li><a href="#">Recent Post 1</a></li>
+                    <li><a href="#">Recent Post 2</a></li>
+                    <li><a href="#">Recent Post 3</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <footer class="footer">
+        <p>&copy; 2023 My Blog. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
